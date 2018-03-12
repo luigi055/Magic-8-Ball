@@ -1,0 +1,127 @@
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.9) rotate(5deg);
+  }
+}
+
+.ball {
+  align-items: center;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 15px 20px 60px rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  position: relative;
+  width: 300px;
+  flex-direction: column;
+}
+
+.surfice {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+  background: -moz-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.0.3-6 */
+  background: radial-gradient( ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  height: 40%;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  width: 20%;
+  transform: rotate(-43deg);
+}
+
+.ball__tag {
+  align-items: center;
+  background: #214;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+  background: -moz-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient( ellipse at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border: 5px solid #666;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.ball__number {
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #000;
+  display: flex;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 5rem;
+  font-weight: 800;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.ball__answer {
+  align-items: center;
+  background: #1d37ac;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon( 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  color: #fff;
+  display: flex;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 0.9rem;
+  height: 90%;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transform: scale(0.9) rotate(5deg);
+  width: 90%;
+}
+
+.ball__answer--animate {
+  animation: showUp 1s ease-out forwards;
+  transform: scale(0.7) rotate(-56deg);
+}
+
+.reset-btn {
+  background: #5cb85c;
+  border: none;
+  box-shadow: 1px 1px 5px #b6b6b6;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 30px auto 0;
+  max-width: 220px;
+  padding: 10px 25px 10px 25px;
+  text-shadow: 1px 1px 1px #3a992a;
+  transition: 0.7s;
+  width: 100%;
+}
+
+.reset-btn:hover {
+  transition: 0.7s;
+  background: #7edd7d;
+}

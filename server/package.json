@@ -1,0 +1,20 @@
+{
+  "name": "8-magic-ball-rest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Basic REST api to test MERN integration with a simple Webapp",
+  "main": "server.js",
+  "author": "Pedro La Rosa",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "./node_modules/.bin/nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}

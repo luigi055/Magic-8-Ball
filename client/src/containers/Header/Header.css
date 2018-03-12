@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header__wrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header__active {
+  color: #000;
+}

@@ -1,0 +1,8 @@
+.magic-ball {
+  align-items: center;
+  background: #6c5ce7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "8-magic-ball",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pedro La Rosa",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "client": "npm run start --prefix client",
+    "server": "npm run start --prefix server",
+    "server:dev": "npm run dev --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
