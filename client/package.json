@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "express": "^4.16.3",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-animate-on-change": "^1.0.1",
@@ -17,9 +18,14 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "react-scripts start",
+    "start": "react-scripts build && node server.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0",
+    "yarn": "1.3.2"
   }
 }
