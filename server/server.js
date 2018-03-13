@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -5,6 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
 app.get("/api/es/answers", (req, res) => {
   res.send([
@@ -58,6 +60,10 @@ app.get("/api/en/answers", (req, res) => {
   ]);
 
   res.end();
+});
+
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
 app.listen(PORT, () => {

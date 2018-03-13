@@ -5,9 +5,10 @@
   "author": "Pedro La Rosa",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run start --prefix server",
+    "start:two": "concurrently \"npm run server\" \"npm run client\"",
     "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
-    "client": "npm run start --prefix client",
+    "client": "npm run build --prefix client",
     "mern-install":
       "yarn install && yarn install --prefix client && yarn install --prefix server",
     "server": "npm run start --prefix server",
