@@ -1,0 +1,34 @@
+.about {
+  background: inherit;
+  height: 700px;
+  padding-top: 100px;
+}
+
+.about__wrapper {
+  background: #fff;
+  border: 12px solid #f90;
+  margin: 0 auto;
+  max-width: 870px;
+  padding: 45px 40px;
+}
+
+.about h2 {
+  font-size: 1.9rem;
+}
+
+.about a {
+  color: #28c;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.about a:hover {
+  color: #39e;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}

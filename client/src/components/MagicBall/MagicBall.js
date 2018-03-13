@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 import Spinner from "./../Spinner/Spinner";
 import Ball from "./Ball/Ball";
 import "./style.css";
@@ -37,5 +38,12 @@ class MagicBall extends Component {
     );
   }
 }
+
+MagicBall.propTypes = {
+  updateState: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
+  answer: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired
+};
 
 export default MagicBall;

@@ -1,6 +1,7 @@
 import React from "react";
-import getRandomOption from "./../../../tools/getRandomOption";
 import AnimateOnChange from "react-animate-on-change";
+import PropTypes from "prop-types";
+import getRandomOption from "./../../../tools/getRandomOption";
 import "./style.css";
 
 const Ball = ({ updateState, options, answer, lang }) => (
@@ -25,7 +26,7 @@ const Ball = ({ updateState, options, answer, lang }) => (
       </div>
     </div>
     <button onClick={Ball.onReset(updateState)} className="reset-btn">
-      {lang === "es" ? 'Elegir Idioma' : "Choose Language"}
+      {lang === "es" ? "Elegir Idioma" : "Choose Language"}
     </button>
   </div>
 );
@@ -33,7 +34,7 @@ const Ball = ({ updateState, options, answer, lang }) => (
 Ball.onReset = updateState => e => {
   e.preventDefault();
   updateState({
-    lang: '',
+    lang: "",
     answer: ""
   });
 };
@@ -43,6 +44,13 @@ Ball.handleRandomOption = (updateState, options) => e => {
   const answer = getRandomOption(options);
   if (options.length === 0) return;
   updateState({ answer });
+};
+
+Ball.propTypes = {
+  updateState: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
+  answer: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired
 };
 
 export default Ball;
