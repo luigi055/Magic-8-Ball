@@ -6,6 +6,7 @@ body {
 
 ::selection {
   background: black;
+  color: #fff;
 }
 
 .global-wrapper {

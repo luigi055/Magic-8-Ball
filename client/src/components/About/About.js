@@ -7,7 +7,7 @@ export default () => (
       <h2>Magic 8 Ball App</h2>
       <p>
         Magic 8 Ball is a simple web application that represents the original
-        toy with the same answers for both english and spanish options. The
+        toy with the same answers for both English and Spanish options. The
         Magic 8-Ball is a toy used for fortune-telling or seeking advice,
         developed in the 1950s and manufactured by Mattel. It is often used in
         fiction since the answer can sometimes be accurate, inaccurate, or
@@ -23,15 +23,15 @@ export default () => (
 
       <p>
         Since i was a kid. i've always wanted to have a Magic 8 ball. so a
-        couple a weeks surfing in the internet i see a magic 8 ball again and i
-        said to my self. "hey it's a very good chance to make one by my own" i
-        also wanted to try a simple integration frontend-backend and have to
-        oportunity to user create-react-app and refresh the use to prop-types
-        library. which i used to use it a lot before it was separate from the
-        core react library. in the rest api.there are just 2 GET request that
-        brings all the option. one in english and the other one in spanish. and
-        from react it fetch all the options depending the selected language via
-        AJAX using axios and async/await
+        couple a weeks surfing in the internet i saw a magic 8 ball again and i
+        thought "hey it's a good chance to make one by my own" i also wanted to
+        try a simple integration frontend-backend and have the oportunity to use
+        create-react-app and refresh knowledge on the prop-types library which i
+        used to use it a lot before it was separate from the core react library.
+        in the rest api.there are 2 GET request that bring all the options. one
+        in English and the other one in Spanish. and fetch all the options from
+        react depending the selected language via AJAX using axios and
+        async/await
       </p>
 
       <h2>Visit the repo and live example</h2>
