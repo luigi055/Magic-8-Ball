@@ -1,11 +1,11 @@
 # Magic 8 Ball App
 
-        Magic 8 Ball is a simple web application that represents the original
-        toy with the same answers for both English and Spanish options. The
-        Magic 8-Ball is a toy used for fortune-telling or seeking advice,
-        developed in the 1950s and manufactured by Mattel. It is often used in
-        fiction since the answer can sometimes be accurate, inaccurate, or
-        statistically improbable.
+Magic 8 Ball is a simple web application that represents the original
+toy with the same answers for both English and Spanish options. The
+Magic 8-Ball is a toy used for fortune-telling or seeking advice,
+developed in the 1950s and manufactured by Mattel. It is often used in
+fiction since the answer can sometimes be accurate, inaccurate, or
+statistically improbable.
 
 [Know more about Magic 8 ball](https://en.wikipedia.org/wiki/Magic_8-Ball)
 
